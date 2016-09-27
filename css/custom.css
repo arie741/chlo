@@ -1,12 +1,14 @@
 /* animation */
 @keyframes fontani1 {
-    from {font-size: 0px;}
-    to {font-size: 50px;}
+    0% {font-size: 0px;}
+    50% {font-size: 50px; margin-top:100px;}
+    100% {margin-top:0px;}
 }
 
 @-webkit-keyframes fontani1 {
-    from {font-size: 0px;}
-    to {font-size: 50px;}
+    0% {font-size: 0px;}
+    50% {font-size: 50px;}
+    100% {margin-top:0px;}
 }
 
 @keyframes ani1 {
@@ -27,24 +29,6 @@
 		max-height:400px;}
 }
 
-@keyframes movetop {
-	from{
-		margin-top:0px;
-	}
-	to {
-		margin-top:-200px;
-	}
-}
-
-@-webkit-keyframes movetop {
-	from{
-		margin-top:0px;
-	}
-	to {
-		margin-top:-200px;
-	}
-}
-
 /* animation ends*/
 
 body {
@@ -52,61 +36,49 @@ body {
 	background-size: 100%;
 }
 
-.v-center {
-	margin-top:200px;
-	text-align: center;
+.hbd {
+	margin-top:100px;
 }
 
-.posani1 {
-	animation-name: movetop;
-    animation-duration: 0.1s;
-	-webkit-animation-name: movetop;
-    -webkit-animation-duration: 0.1s;
-    -moz-animation-name: movetop;
-    -moz-animation-duration: 0.1s;
-    -o-animation-name: movetop;
-    -o-animation-duration: 0.1s;
-
-    animation-delay:0.5s;
-	-webkit-animation-delay:0.5s;
-	-moz-animation-delay:0.5s;
-	-o-animation-delay:0.5s;
+.v-center {
+	text-align: center;
 }
 
 .fontani1 {
 	font-size: 50px;
 	vertical-align: center;
 	animation-name: fontani1;
-    animation-duration: 0.1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 	-webkit-animation-name: fontani1;
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
     -moz-animation-name: fontani1;
-    -moz-animation-duration: 0.5s;
-    -o-animation-name: fontani1;
-    -o-animation-duration: 0.5s;
+    -moz-animation-duration: 2s;
+    -moz-animation-fill-mode: forwards;
 }
 
 .ani1 {
 	text-align: center;
 	vertical-align: center;
 	animation-name: ani1;
-    animation-duration: 0.1s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 	-webkit-animation-name: ani1;
     -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
     -moz-animation-name: ani1;
     -moz-animation-duration: 0.5s;
-    -o-animation-name: ani1;
-    -o-animation-duration: 0.5s;
+    -moz-animation-fill-mode: forwards;
 }
 
 .delay-1s{
 	animation-delay:1s;
 	-webkit-animation-delay:1s;
 	-moz-animation-delay:1s;
-	-o-animation-delay:1s;
 }
 
 .chloimg {
-	max-width: 300px;
-	max-height:400px;
+	max-width: 0px;
+	max-height:0px;
 }
